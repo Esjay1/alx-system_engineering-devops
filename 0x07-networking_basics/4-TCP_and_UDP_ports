@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#This command lists the listening ports and the PIDsand their program names.
+
+ss -lp
+
