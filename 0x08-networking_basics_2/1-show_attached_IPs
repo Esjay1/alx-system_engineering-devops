@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#This script lists the ip addresses in a host
+
+IPADDS="$(hostname -I)"
+
+for ip in $IPADDS; do
+    echo "$ip"
+done
