@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#This script changes the localhost and facebook.com #ip addresses respectively
+
+sudo cp /etc/hosts /etc/hosts.backup
+
+
+LOCAL="127.0.0.2"
+FACEBOOK="8.8.8.8"
+HOSTFILE="/etc/hosts.backup"
+
+sudo echo "$LOCAL	localhost" | sudo tee "$HOSTFILE" > /dev/null
+
+sudo echo "$FACEBOOK	facebook.com" | sudo tee -a  "$HOSTFILE" >/dev/null
+
+sudo cp -f "$HOSTFILE" /etc/hosts
