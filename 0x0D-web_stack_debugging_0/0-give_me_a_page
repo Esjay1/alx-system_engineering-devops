@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 # Resolving curl: (52) Empty reply from server error issue 
 
-docker exec -ti f650af2a42b1 /bin/bash
-which apache2
-service apache2 status
 service apache2 start
-service apache2 status
