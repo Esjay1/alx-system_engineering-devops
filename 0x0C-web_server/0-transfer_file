@@ -17,4 +17,4 @@ PATH_TO_SSH_KEY=$4
 #securely send a copy to the remote server
 scp -i "$PATH_TO_SSH_KEY" -o StrictHostKeyChecking=no "$PATH_TO_FILE" "$USERNAME"@"$IP":~/
 
-   
+
