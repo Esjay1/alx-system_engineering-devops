@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #This script transfers a file to a remote server
 
 #Condition check for number of paramaters
