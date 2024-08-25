@@ -1,0 +1,19 @@
+#!/usr/bin/ env bash
+#This script installs and configures nginx 
+
+#Install nginx
+apt-get update -y
+apt-get install -y nginx
+
+#start nginx without using nginx
+service nginx start
+
+
+#querying Nginx at its root / with a GET request
+#(requesting a page) using curl must return "Hello World!"
+echo "Hello World!" >> /var/www/html/index.html
+
+
+#restart nginx without using systemctl
+service nginx restart
+
